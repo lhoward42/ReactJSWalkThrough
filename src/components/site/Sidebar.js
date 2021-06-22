@@ -7,6 +7,8 @@ import Home from './Home'
 import Resources from './Resources'
 import FunctionalComponentDemo from '../concepts/FunctionalComponents/FunctionalComponentsDemo'
 
+// import Component from '../codepen/Codepen'
+
 const Sidebar = () => {
     return(
         <div className= 'sidebar'>
@@ -15,6 +17,7 @@ const Sidebar = () => {
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/resources'>Resources</Link></li>
                     <li><Link to='/functionalcomponent'>Functional Component</Link></li>
+                    {/* <li><Link to='/codepen'>Codepen</Link></li> */}
                 </ul>
             </div>
             <div className='sidebar-route'>
@@ -23,6 +26,8 @@ const Sidebar = () => {
                     <Route exact path='/resources'><Resources /></Route>
                     <Route exact path='/'><Home /></Route>
                     <Route exact path='/functionalcomponent'><FunctionalComponentDemo /></Route>
+                    {/* <Route exact path='/functionalcomponent'><HelloWorld /></Route> */}
+                    {/* <Route exact path='/codepen'><Component /></Route> */}
                 </Switch>
             </div>
         </div>

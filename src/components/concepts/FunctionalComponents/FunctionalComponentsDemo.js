@@ -21,3 +21,7 @@ const FunctionalComponentDemo = () => {
 }
 
 export default FunctionalComponentDemo
+const HelloWorld = function() {
+   return( <h1> Here is hello world in a block body function</h1>
+   )
+}

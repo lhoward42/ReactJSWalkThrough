@@ -1,9 +1,14 @@
+import {Fade, Alert} from 'reactstrap'
 import {Link} from 'react-router-dom'
 
 const Home = () => {
     return(
         <div className= 'main'>
             <div className= 'mainDiv'>
+                <Fade in={true} mountOnEnter={true} unmountOnExit={true}>
+                    <Alert color="success">
+                        Welcome to the React Library!!
+                    </Alert>
                 <h1>Welcome to React Fundamentals at Eleven Fifty </h1>
                 <p>
                     This app is intended to be a starter/tutorial app for your upcoming project and a learning sandbox for you in months and years to come should you continue to develop software with React. In this application, we will work through some of the basic React concepts, build out some small applications, and then unleash you to build your own applications.
@@ -22,6 +27,7 @@ const Home = () => {
                         <Link to='/resources'>React Resources</Link>
                     </li>
                 </ul>
+            </Fade>
             </div>
         </div>
     )
