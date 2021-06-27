@@ -6,6 +6,10 @@ import {
 import Home from './Home'
 import Resources from './Resources'
 import FunctionalComponentDemo from '../concepts/FunctionalComponents/FunctionalComponentsDemo'
+import JSXRules from '../concepts/FunctionalComponents/JSXRules'
+import State from '../concepts/FunctionalComponents/State'
+import Effects from '../concepts/Effects'
+import PropsDemo from '../concepts/PropsDemo'
 
 // import Component from '../codepen/Codepen'
 
@@ -17,7 +21,10 @@ const Sidebar = () => {
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/resources'>Resources</Link></li>
                     <li><Link to='/functionalcomponent'>Functional Component</Link></li>
-                    {/* <li><Link to='/codepen'>Codepen</Link></li> */}
+                    <li><Link to='/jsxrules'>JSX Rules</Link></li>
+                    <li><Link to='/state'>State</Link></li>
+                    <li><Link to='/effects'>Effects</Link></li>
+                    <li><Link to='propsdemo'>Props Demo</Link></li>
                 </ul>
             </div>
             <div className='sidebar-route'>
@@ -26,12 +33,15 @@ const Sidebar = () => {
                     <Route exact path='/resources'><Resources /></Route>
                     <Route exact path='/'><Home /></Route>
                     <Route exact path='/functionalcomponent'><FunctionalComponentDemo /></Route>
-                    {/* <Route exact path='/functionalcomponent'><HelloWorld /></Route> */}
-                    {/* <Route exact path='/codepen'><Component /></Route> */}
+                    <Route exact path='/jsxrules'><JSXRules /></Route>
+                    <Route exact path='/state'><State /></Route>
+                    <Route exact path='/effects'><Effects /></Route>
+                    <Route exact path='/propsdemo'><PropsDemo /></Route>
                 </Switch>
             </div>
         </div>
     )
 }
 
-export default Sidebar 
+export default Sidebar
+    
